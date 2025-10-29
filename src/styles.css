@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("font/Raleway.ttf") format("truetype");
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(25%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #000035;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: cyan;
+}
+
+#brand-name {
+    font-size: 3rem;
+    margin: 1rem 0rem;
+
+    animation: 0.5s ease-out 0.1s 1 forwards slideInFromBottom;
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#logo-main {
+    height: 15rem;
+    width: 15rem;
+
+    animation: 0.5s ease-out 0.1s 1 forwards slideInFromBottom;
+}
+
+#login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-textbox {
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0.5rem;
+    transition: 0.1s linear;
+    background-color: transparent;
+    color: white;
+}
+
+.login-textbox::placeholder {
+    color: white;
+}
+
+.login-textbox:focus {
+    background-color: #0000dd !important;
+}
+
+.login-textbox:hover {
+    background-color: navy;
+}
+
+
+.login-button {
+    margin: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    transition: 0.1s linear;
+    font-size: 1.25rem;
+    background-color: transparent;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.login-button:active,
+.login-button:focus {
+    background-color: cyan;
+    border: 1px solid cyan;
+    color: black;
+}
+
+#login-spacer-bottom {
+    height: 15rem;
+}
